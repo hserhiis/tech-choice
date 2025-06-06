@@ -1,0 +1,259 @@
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    background: #FFC7F0;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: #E91E63;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav a {
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background: #880e4f;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #E91E63;
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Hero */
+.hero {
+    background-image: url("beauty.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 20rem 2rem;
+    animation: fadeIn 1s ease-in;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color: #FFC7F0;
+    margin-top: 7rem;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #E91E63;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #c2185b;
+}
+
+/* Sent state */
+.btn.sent {
+    background-color: #4caf50 !important; /* зеленая подсветка */
+    box-shadow: 0 0 10px #4caf50;
+    color: white;
+    pointer-events: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Sections */
+.section {
+    padding: 3rem 1rem;
+    background: #f9f9f9;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #880e4f;
+    margin-bottom: 2rem;
+}
+
+/* Контейнер для карточек услуг */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Отдельная карточка услуги */
+.service-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem 1.25rem;
+    box-shadow: 0 4px 12px rgba(233, 30, 99, 0.1); /* лёгкая тень розового оттенка */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(233, 30, 99, 0.25);
+}
+
+/* Заголовок услуги */
+.service-card h3 {
+    color: #E91E63; /* розовый основной цвет */
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+/* Описание услуги */
+.service-card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Чтобы сетка была чуть уже на мобилках */
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+    stroke: #E91E63;
+}
+
+/* Contact */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+#formMessage {
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: #4caf50;
+}
+
+/* Footer */
+.footer {
+    background: #880e4f;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}

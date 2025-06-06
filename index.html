@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EscolhaDeTecnologia - Sites para Salões de Beleza</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <h1 class="logo">EscolhaDeTecnologia</h1>
+      <nav class="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#funcionalidade">Funcionalidades</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h2 class="hero-title">Sites modernos para Salões de Beleza</h2>
+    <p class="hero-subtitle">Impulsione seu salão com uma presença digital profissional</p>
+    <a href="#contato" class="btn">Solicitar Demonstração</a>
+  </div>
+</section>
+
+<section id="servicos" class="section">
+  <div class="container">
+    <h2 class="section-title">O que oferecemos</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Site Personalizado</h3>
+        <p>Criação de um site único que reflete a identidade do seu salão.</p>
+      </div>
+      <div class="service-card">
+        <h3>Agendamento Online</h3>
+        <p>Sistema integrado para reservas rápidas e fáceis.</p>
+      </div>
+      <div class="service-card">
+        <h3>Catálogo de Serviços</h3>
+        <p>Apresente seus serviços com descrições e preços.</p>
+      </div>
+      <div class="service-card">
+        <h3>Design Responsivo</h3>
+        <p>Visual perfeito em computadores, tablets e smartphones.</p>
+      </div>
+      <div class="service-card">
+        <h3>Painel Administrativo</h3>
+        <p>Gerencie seu site com facilidade através de um painel intuitivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funcionalidade" class="section">
+  <div class="container">
+    <h2 class="section-title">Funcionalidades do Site</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10m-11 4h12a2 2 0 002-2v-5H5v5a2 2 0 002 2z" /></svg>
+        <p>Agendamento com calendário</p>
+      </div>
+      <div class="feature-card">
+        <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+        <p>Integração com WhatsApp</p>
+      </div>
+      <div class="feature-card">
+        <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1M12 12a4 4 0 100-8 4 4 0 000 8z" /></svg>
+        <p>Galeria de imagens</p>
+      </div>
+      <div class="feature-card">
+        <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" /></svg>
+        <p>Multilíngue: PT / EN</p>
+      </div>
+      <div class="feature-card">
+        <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 014-4h0a4 4 0 014 4v2M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a2 2 0 002 2z" /></svg>
+        <p>SEO otimizado</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="section">
+  <div class="container">
+    <h2 class="section-title">Fale Conosco</h2>
+    <form class="contact-form" id="contactForm">
+      <input type="text" name="user_name" placeholder="Seu Nome" required />
+      <input type="email" name="user_email" placeholder="Seu Email" required />
+      <textarea name="message" placeholder="Mensagem" required></textarea>
+      <button type="submit" class="btn" id="submitBtn">Enviar</button>
+      <div id="formMessage"></div>
+    </form>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 EscolhaDeTecnologia. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>
