@@ -63,7 +63,7 @@ body {
 
 /* Hero */
 .hero {
-    background-image: url("beauty.png");
+    background-image: url("assets/beauty.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
